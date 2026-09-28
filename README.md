@@ -55,4 +55,4 @@ The tests exercise content routes, the native form, validation, stored enquiries
 
 ## Credits and support
 
-Meridian adapts the authorized [Meridian source template by Kevin Dakin](https://webflow.com/templates/html/meridian-website-template) into native Statamic content models and Antlers/Tailwind templates. See [CREDITS.md](CREDITS.md) for provenance. For development issues, use [GitHub Issues](https://github.com/rad-themes/statamic-meridian/issues).
+Meridian adapts the authorized [Meridian source template by Kevin Dakin](https://webflow.com/templates/html/meridian-website-template) into native Statamic content models and Antlers/Tailwind templates. See [CREDITS.md](https://github.com/rad-themes/statamic-meridian/blob/codex/meridian-starter-kit/CREDITS.md) for provenance. For development issues, use [GitHub Issues](https://github.com/rad-themes/statamic-meridian/issues).
