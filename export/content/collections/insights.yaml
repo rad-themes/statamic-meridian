@@ -1,0 +1,7 @@
+title: Insights
+template: insights-detail
+layout: layout
+route: '{mount}/{slug}'
+mount: 44c00a7e-a5ac-5dae-ad71-46304dbc78e9
+date: false
+revisions: false

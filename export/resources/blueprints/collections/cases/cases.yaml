@@ -1,0 +1,67 @@
+title: 'Case study'
+tabs:
+  main:
+    display: 'Case study'
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              display: Title
+              validate: [required]
+          -
+            handle: industry
+            field:
+              type: text
+              display: Industry
+          -
+            handle: summary
+            field:
+              type: textarea
+              display: Summary
+          -
+            handle: image
+            field:
+              type: assets
+              display: Image
+              container: assets
+              max_files: 1
+              mode: list
+          -
+            handle: image_alt
+            field:
+              type: text
+              display: 'Image Alt'
+          -
+            handle: challenge
+            field:
+              type: markdown
+              display: Challenge
+              escape_markup: true
+          -
+            handle: approach
+            field:
+              type: markdown
+              display: Approach
+              escape_markup: true
+          -
+            handle: outcome
+            field:
+              type: markdown
+              display: Outcome
+              escape_markup: true
+          -
+            handle: illustrative
+            field:
+              type: toggle
+              display: Illustrative
+              default: true
+  seo:
+    display: SEO
+    sections:
+      -
+        fields:
+          -
+            import: seo

@@ -1,0 +1,47 @@
+title: 'Discovery enquiries'
+fields:
+  -
+    handle: name
+    field:
+      type: text
+      display: Name
+      validate:
+        - required
+        - 'max:120'
+  -
+    handle: email
+    field:
+      type: text
+      display: Email
+      input_type: email
+      validate:
+        - required
+        - email
+        - 'max:254'
+  -
+    handle: company
+    field:
+      type: text
+      display: Company
+      validate:
+        - nullable
+        - 'max:160'
+  -
+    handle: service
+    field:
+      type: select
+      display: Service
+      options:
+        operations-audit: 'Operations audit'
+        systems-design: 'Systems design'
+        organizational-alignment: 'Organizational alignment'
+        not-sure: 'Not sure yet'
+  -
+    handle: message
+    field:
+      type: textarea
+      display: Message
+      validate:
+        - required
+        - 'min:10'
+        - 'max:5000'

@@ -1,0 +1,50 @@
+title: Insight
+tabs:
+  main:
+    display: Insight
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              display: Title
+              validate: [required]
+          -
+            handle: category
+            field:
+              type: select
+              display: Category
+              options: { operations: Operations, strategy: Strategy, growth: Growth }
+          -
+            handle: summary
+            field:
+              type: textarea
+              display: Summary
+          -
+            handle: image
+            field:
+              type: assets
+              display: Image
+              container: assets
+              max_files: 1
+              mode: list
+          -
+            handle: image_alt
+            field:
+              type: text
+              display: 'Image Alt'
+          -
+            handle: body
+            field:
+              type: markdown
+              display: Body
+              escape_markup: true
+  seo:
+    display: SEO
+    sections:
+      -
+        fields:
+          -
+            import: seo

@@ -1,0 +1,6 @@
+<header class="site-header"><div class="shell header-inner">
+<a class="wordmark" href="/" aria-label="{{ brand:name | sanitize }} home"><span class="wordmark-icon" aria-hidden="true">M</span><span>{{ brand:name | sanitize }}<b>.</b></span></a>
+<nav class="desktop-nav" aria-label="Main navigation">{{ nav:main }}<a href="{{ url }}" {{ if is_current }}aria-current="page"{{ /if }}>{{ title | sanitize }}</a>{{ /nav:main }}</nav>
+<a class="button button-small desktop-cta" href="{{ brand:cta_link }}">{{ brand:cta_label | sanitize }}<span aria-hidden="true">↗</span></a>
+<button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="mobile-menu">Menu <span aria-hidden="true">☰</span></button>
+</div><nav class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation" hidden>{{ nav:main }}<a href="{{ url }}">{{ title | sanitize }}<span aria-hidden="true">↗</span></a>{{ /nav:main }}<a href="{{ brand:cta_link }}">{{ brand:cta_label | sanitize }}<span aria-hidden="true">↗</span></a></nav></header>

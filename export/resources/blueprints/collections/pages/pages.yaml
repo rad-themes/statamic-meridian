@@ -1,0 +1,63 @@
+title: Page
+tabs:
+  main:
+    display: Page
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              display: Title
+              validate: [required]
+          -
+            handle: eyebrow
+            field:
+              type: text
+              display: Eyebrow
+          -
+            handle: headline
+            field:
+              type: textarea
+              display: Headline
+              validate: [required]
+          -
+            handle: intro
+            field:
+              type: textarea
+              display: Intro
+          -
+            handle: hero_image
+            field:
+              type: assets
+              display: 'Hero Image'
+              container: assets
+              max_files: 1
+              mode: list
+          -
+            handle: hero_image_alt
+            field:
+              type: text
+              display: 'Hero Image Alt'
+          -
+            handle: hero_variant
+            field:
+              type: select
+              display: 'Hero Variant'
+              options: { dark: 'Dark image hero', light: 'Light editorial hero' }
+              default: light
+          -
+            handle: sections
+            field:
+              type: replicator
+              display: Sections
+              collapse: true
+              sets: { content: { display: Content, sets: { statement: { display: 'Editorial statement', fields: [{ import: section_heading }, { handle: body, field: { type: textarea, display: Body } }, { handle: link_label, field: { type: text, display: 'Link Label' } }, { handle: link, field: { type: link, display: Link, collections: [pages, services, cases, insights] } }] }, split: { display: 'Image and story', fields: [{ import: section_heading }, { handle: image, field: { type: assets, display: Image, container: assets, max_files: 1, mode: list } }, { handle: image_alt, field: { type: text, display: 'Image Alt' } }, { handle: body, field: { type: textarea, display: Body } }, { handle: link_label, field: { type: text, display: 'Link Label' } }, { handle: link, field: { type: link, display: Link, collections: [pages, services, cases, insights] } }] }, metrics: { display: 'Result metrics', fields: [{ import: section_heading }, { handle: items, field: { type: grid, display: Items, mode: stacked, fields: [{ handle: number, field: { type: text, display: Number } }, { handle: label, field: { type: text, display: Label } }] } }] }, services: { display: 'Services collection', fields: [{ import: section_heading }, { handle: limit, field: { type: integer, display: Limit, default: 3 } }] }, cases: { display: 'Case studies collection', fields: [{ import: section_heading }, { handle: limit, field: { type: integer, display: Limit, default: 6 } }] }, insights: { display: 'Insights collection', fields: [{ import: section_heading }, { handle: limit, field: { type: integer, display: Limit, default: 6 } }] }, process: { display: 'Process steps', fields: [{ import: section_heading }, { handle: steps, field: { type: grid, display: Steps, mode: stacked, fields: [{ handle: title, field: { type: text, display: Title } }, { handle: text, field: { type: textarea, display: Text } }] } }] }, pricing: { display: 'Pricing plans', fields: [{ import: section_heading }, { handle: note, field: { type: textarea, display: Note } }, { handle: plans, field: { type: grid, display: Plans, mode: stacked, fields: [{ handle: name, field: { type: text, display: Name } }, { handle: price, field: { type: text, display: Price } }, { handle: unit, field: { type: text, display: Unit } }, { handle: text, field: { type: textarea, display: Text } }, { handle: features, field: { type: list, display: Features } }, { handle: featured, field: { type: toggle, display: Featured } }] } }] }, faq: { display: 'Questions and answers', fields: [{ import: section_heading }, { handle: items, field: { type: grid, display: Items, mode: stacked, fields: [{ handle: question, field: { type: text, display: Question } }, { handle: answer, field: { type: textarea, display: Answer } }] } }] }, contact: { display: 'Discovery form', fields: [{ import: section_heading }] }, cta: { display: 'Call to action', fields: [{ import: section_heading }, { handle: link_label, field: { type: text, display: 'Link Label' } }, { handle: link, field: { type: link, display: Link, collections: [pages, services, cases, insights] } }] } } } }
+  seo:
+    display: SEO
+    sections:
+      -
+        fields:
+          -
+            import: seo

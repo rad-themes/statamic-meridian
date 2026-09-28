@@ -1,0 +1,61 @@
+title: Service
+tabs:
+  main:
+    display: Service
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              display: Title
+              validate: [required]
+          -
+            handle: summary
+            field:
+              type: textarea
+              display: Summary
+          -
+            handle: image
+            field:
+              type: assets
+              display: Image
+              container: assets
+              max_files: 1
+              mode: list
+          -
+            handle: image_alt
+            field:
+              type: text
+              display: 'Image Alt'
+          -
+            handle: eyebrow
+            field:
+              type: text
+              display: Eyebrow
+          -
+            handle: body
+            field:
+              type: markdown
+              display: Body
+              escape_markup: true
+          -
+            handle: deliverables
+            field:
+              type: list
+              display: Deliverables
+          -
+            handle: process
+            field:
+              type: grid
+              display: Process
+              mode: stacked
+              fields: [{ handle: title, field: { type: text, display: Title } }, { handle: text, field: { type: textarea, display: Text } }]
+  seo:
+    display: SEO
+    sections:
+      -
+        fields:
+          -
+            import: seo

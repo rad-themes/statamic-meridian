@@ -1,0 +1,7 @@
+title: 'Case Studies'
+template: cases-detail
+layout: layout
+route: '{mount}/{slug}'
+mount: 2e82a55a-1665-539f-a2bd-59cdf12355a2
+date: false
+revisions: false

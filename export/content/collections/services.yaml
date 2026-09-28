@@ -1,0 +1,7 @@
+title: Services
+template: services-detail
+layout: layout
+route: '{mount}/{slug}'
+mount: e9cc904c-9b57-5e94-8ecf-970479e1fcad
+date: false
+revisions: false

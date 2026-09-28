@@ -1,0 +1,20 @@
+title: 'Search and sharing'
+fields:
+  -
+    handle: seo_title
+    field:
+      type: text
+      display: 'Seo Title'
+  -
+    handle: seo_description
+    field:
+      type: textarea
+      display: 'Seo Description'
+  -
+    handle: social_image
+    field:
+      type: assets
+      display: 'Social Image'
+      container: assets
+      max_files: 1
+      mode: list
