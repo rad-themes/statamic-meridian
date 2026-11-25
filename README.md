@@ -20,11 +20,11 @@ Statamic licensing is separate from this kit; see [Statamic pricing](https://sta
 
 ## Installation
 
-Install into a **new** Statamic project. Once a Marketplace release is available, use `rad-themes/statamic-meridian` with the Statamic CLI. Repository collaborators can install this private preview from a local checkout:
+Install into a **new** Statamic project. Once a Marketplace release is available, use `rad-themes/meridian` with the Statamic CLI. Repository collaborators can install this private preview from a local checkout:
 
 ```sh
-composer config repositories.meridian path /absolute/path/to/statamic-meridian
-php please starter-kit:install rad-themes/statamic-meridian --local --without-user --clear-site
+composer config repositories.meridian path /absolute/path/to/meridian
+php please starter-kit:install rad-themes/meridian --local --without-user --clear-site
 php please make:user
 php please stache:refresh
 npm ci

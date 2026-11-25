@@ -1,11 +1,11 @@
 {
-    "name": "rad-themes/statamic-meridian",
+    "name": "rad-themes/meridian",
     "description": "A modular consulting and professional services starter kit for Statamic by Rad Themes.",
     "type": "statamic-starter-kit",
     "license": "proprietary",
     "keywords": ["statamic", "starter-kit", "consulting", "tailwindcss"],
     "authors": [{"name": "Rad Themes", "homepage": "https://statamic.com/creators/rad-themes"}],
-    "support": {"issues": "https://github.com/rad-themes/statamic-meridian/issues"},
+    "support": {"issues": "https://github.com/rad-themes/meridian/issues"},
     "require": {"php": "^8.3", "statamic/cms": "^6.34"},
     "extra": {
         "statamic": {
